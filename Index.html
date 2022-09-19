@@ -1,86 +1,208 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html>
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- TemplateBeginEditable name="doctitle" -->
-<title>Simple Theme</title>
-<!-- TemplateEndEditable -->
-<link href="../css/multiColumnTemplate.css" rel="stylesheet" type="text/css">
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-<!-- TemplateBeginEditable name="head" -->
-<!-- TemplateEndEditable -->
-</head>
-<body>
-<div class="container">
-  <header>
-    <div class="primary_header">
-      <h1 class="title"> BIBLIOTECA</h1>
-    </div>
-    <nav class="secondary_header" id="menu">
-      <ul>
-        <li>INICIO&nbsp;</li>
-        <li>SALAS&nbsp;</li>
-        <li>CONSULTAS</li>
-        <li>ACERCA DE&nbsp;</li>
-        <li>CUENTA&nbsp;</li>
-      </ul>
-    </nav>
-  </header>
-  <section>
-    <h2 class="noDisplay">Main Content</h2>
-    <article class="left_article">
-      <h3>HOLA ....</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    </article>
-    <aside class="right_article"><img src="../images/placeholder.jpg" alt="" width="400" height="200" class="placeholder"/> </aside>
-  </section>
-  <div class="row">
-    <div class="columns">
-      <p class="thumbnail_align"> <img src="../images/bkg_06.jpg" alt="" class="thumbnail"/> </p>
-      <h4>TITLE</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-    </div>
-    <div class="columns">
-      <p class="thumbnail_align"> <img src="../images/bkg_06.jpg" alt="" class="thumbnail"/> </p>
-      <h4>TITLE</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-    </div>
-    <div class="columns">
-      <p class="thumbnail_align"> <img src="../images/bkg_06.jpg" alt="" class="thumbnail"/> </p>
-      <h4>TITLE</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-    </div>
-    <div class="columns">
-      <p class="thumbnail_align"> <img src="../images/bkg_06.jpg" alt="" class="thumbnail"/> </p>
-      <h4>TITLE</h4>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-    </div>
-  </div>
-  <div class="row blockDisplay">
-    <div class="column_half left_half">
-      <h2 class="column_title">LEFT COLUMN</h2>
-    </div>
-    <div class="column_half right_half">
-      <h2 class="column_title">RIGHT COLUMN</h2>
-    </div>
-  </div>
-  <div class="social">
-    <p class="social_icon"><img src="../images/bkg_06.jpg" width="100" alt="" class="thumbnail"/></p>
-    <p class="social_icon"><img src="../images/bkg_06.jpg" width="100" alt="" class="thumbnail"/></p>
-    <p class="social_icon"><img src="../images/bkg_06.jpg" width="100" alt="" class="thumbnail"/></p>
-    <p class="social_icon"><img src="../images/bkg_06.jpg" width="100" alt="" class="thumbnail"/></p>
-  </div>
-  <footer class="secondary_header footer">
-    <div class="copyright">&copy;2021 - <strong>SIMPLE Theme</strong></div>
-  </footer>
-</div>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title>BiblioTIC</title>
+        <link rel="stylesheet" href="Styles/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container-fluid" style="padding: 0%; margin: 0%;">
+            <div class="header headerTIC">
+                <div class="row">
+                    <div class="col-lg-2 col-md-1 col-sm-1 notebook">
+                        <div class="row hide">█</div>
+                        <i class="bi bi-journal-bookmark-fill"></i>
+                        <div class="row hide">█</div>
+                    </div>
+                    <div class="col-lg-7 col-md-5 col-sm-4">
+                        <div class="row hide">█</div>
+                        BIBLIOTECA MINTIC
+                        <div class="row hide">█</div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-2" style="font-size: 12px;">
+                        <div class="row hide">█</div>
+                        <div class="row" style="text-align: center;">
+                            <div class="row">
+                                HOLA
+                            </div>
+                            <div class="row">
+                                Ingrese/Crear cuenta
+                            </div>
+                        </div>
+                        <div class="row hide">█</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row salas">
+                <div class="col-lg-2 col-md-2 col-sm-1 hide">█</div>
+                <div class="col-lg-8 col-md-6 col-sm-4">
+                    <div class="row" style="text-align: right; align-content: right;">
+                        <div class="col-lg-7 col-md-5 col-sm-4 hide">█</div>
+                        <div class="col-lg-5 col-md-3 col-sm-2">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-2 col-sm-1"><input type="button" class="botonsalas" value="INICIO" onclick="MostrarInicio()"></div>
+                                <div class="col-lg-3 col-md-2 col-sm-2"><input type="button" class="botonsalas" value="CONSULTAS" onclick="MostrarConsultas()"></div>
+                                <div class="col-lg-3 col-md-2 col-sm-2"><input type="button" class="botonsalas" value="ACERCA DE" onclick="MostrarAcercaDe()"></div>
+                                <div class="col-lg-3 col-md-2 col-sm-1"><input type="button" class="botonsalas" value="CUENTA" onclick="MostrarCuenta()"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-1 hide">█</div>
+            </div>
+
+            <div class="row" id="PanelConsultasBusqueda" style="display: none;">
+                <div class="col-lg-4 col-md-3 col-sm-2 hide">█</div>
+                <div class="col-lg-4 col-md-3 col-sm-2">
+                    <div style="border: 1px solid #7e7e7e;">
+                        <i class="bi bi-search"></i>
+                        <input type="text" id="ConsultasBusqueda" placeholder="Escriba una palabra clave sobre el libro que busca" style="border: 0px; width: 95%; display: inline-block;">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-3 col-sm-2 hide">█</div>
+
+            </div>
+            <div class="row hide" id="espacio1">█</div>
+            <div class="row hide" id="espacio2">█</div>
+            
+            <div class="row" id="PanelInicio" style="display: none">
+                <div class="col-lg-1 col-md-1 col-sm-1 hide">█</div>
+                <div class="col-lg-10 col-md-7 col-sm-4">
+                    <!-- Contenido -->
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 hide">█</div>
+            </div>
+
+            <div class="row" id="PanelConsultas" style="display: none">
+                <div class="col-lg-1 col-md-1 col-sm-1 hide">█</div>
+                <div class="col-lg-10 col-md-7 col-sm-4">
+                    <div class="row subtitulos">
+                        Libros
+                    </div>
+                    <div class="row">
+                        <!-- Aqui va la consulta de los libros -->
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 hide">█</div>
+            </div>
+
+            <div class="row" id="PanelAcercaDe" style="display: none">
+                <div class="col-lg-1 col-md-1 col-sm-1 hide">█</div>
+                <div class="col-lg-10 col-md-7 col-sm-4">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-4 col-sm-3 AcercaDeTexto">
+                            <div class="row hide">█</div>
+                            <div class="row hide">█</div>
+                            <div class="row">
+                                Términos y condiciones de la Biblioteca.
+                            </div>
+                            <div class="row hide">█</div>
+                            <div class="row hide">█</div>
+                            <div class="row">
+                                Cancelar con anticipación las reservas en sala para que otros tengan oportunidad.
+                            </div>
+                            <div class="row hide">█</div>
+                            <div class="row">
+                                Entregar oportunamente los libros prestados.
+                            </div>
+                            <div class="row hide">█</div>
+                            <div class="row">
+                                Mantener actualizados los datos en "CUENTA".
+                            </div>
+                            <div class="row hide">█</div>
+                        </div>
+                        <div class="col-lg-6 col-md-4 col-sm-3">
+                            <div class="row">
+                                <div class="col-lg-1 col-md-1 col-sm-1 hide">█</div>
+                                <div class="col-lg-11 col-md-7 col-sm-5">
+                                    <img src="Imagenes/ProfesorDeMadera.png" style="width: 80%;height: auto;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 hide">█</div>
+            </div>
+
+            <div class="row" id="PanelCuenta">
+                <div class="col-lg-1 col-md-1 col-sm-1 hide">█</div>
+                <div class="col-lg-10 col-md-7 col-sm-4">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-4 col-sm-3">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-3 col-sm-2 subtitulos">Nombre:&nbsp;</div>
+                                <div class="col-lg-8 col-md-6 col-sm-4"><div id="NombreUsuario"></div></div>
+                            </div>
+                            <div class="row hide">█</div>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-3 col-sm-2 subtitulos">Dirección:&nbsp;</div>
+                                <div class="col-lg-8 col-md-6 col-sm-4"><div id="Direccion"></div></div>
+                            </div>
+                            <div class="row hide">█</div>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-3 col-sm-2 subtitulos">Correo:&nbsp;</div>
+                                <div class="col-lg-8 col-md-6 col-sm-4"><div id="Correo"></div></div>
+                            </div>
+                            <div class="row hide">█</div>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-3 col-sm-2 subtitulos">Celular:&nbsp;</div>
+                                <div class="col-lg-8 col-md-6 col-sm-4"><div id="Celular"></div></div>
+                            </div>
+                            <div class="row hide">█</div>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-3 col-sm-2 subtitulos">Cambio de contraseña:&nbsp;</div>
+                                <div class="col-lg-8 col-md-6 col-sm-4"><div id="Clave"></div></div>
+                            </div>
+                            <div class="row hide">█</div>
+                            <div class="row hide">█</div>
+                            <div class="row hide">█</div>
+                            <div class="row hide">█</div>
+                            <div class="row hide">█</div>
+                            <div class="row hide">█</div>
+                            <div class="row hide">█</div>
+                            <div class="row hide">█</div>
+                            <div class="row">
+                                <div class="subtitulos">Seleccionar foto de perfil:</div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-4 col-sm-3">
+                            <div class="row">
+                                <div class="col-lg-1 col-md-1 col-sm-1 hide">█</div>
+                                <div class="col-lg-11 col-md-7 col-sm-5">
+                                    <img src="Imagenes/ProfesoraConLentes.png" style="width: 80%;height: auto;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 hide">█</div>
+
+
+
+            </div>
+        </div>
+
+        <div class="row hide">█</div>
+        <div class="row hide">█</div>
+
+
+        <footer id="sticky-footer" class="flex-shrink-0 py-4 footerspace">
+            <div class="row">
+                <div class="col-lg-1 col-md-1 col-sm-1 hide">█</div>
+                <div class="col-lg-10 col-md-7 col-sm-5"><strong>Biblioteca Mintic</strong></div>
+                <div class="col-lg-1 col-md-1 col-sm-1 hide">█</div>
+            </div>
+            
+        </footer>
+
+        <script src="Scripts/index.js"></script>
+        <script src="http://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
 </html>
