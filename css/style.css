@@ -47,7 +47,7 @@ header nav ul li a:hover {
   height: 300px;
 }
 
-.contenedor .main {
+.contenedor #main {
   width: 69.1%;
   height: 100%;
   margin-right: 0.9%;
@@ -113,5 +113,3 @@ form input[type="submit"]:hover {
   background: #b6b6b4;
   cursor: pointer;
 }
-
-
