@@ -114,14 +114,20 @@ form input[type="submit"]:hover {
   cursor: pointer;
 }
 
+/********************************/
 /*Estilos para tabla*/
+/********************************/
 
 table {
   border: 1px solid black;
   border-collapse: collapse;
+  font-size: 10px;
 }
 
-table thead {
+table tr:nth-child(1) {
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
   background-color: #1f45fc;
 }
 

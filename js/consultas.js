@@ -9,10 +9,14 @@ bottom.addEventListener("click", hizoClick);
 */
 
 libros = [];
+let bottomBuscar = document.getElementById("bottomBuscarLibro");
 
 const getlibrosUrl =
   "https://minticgrupo4.herokuapp.com/libros/consultarLibros";
 
+function clickBuscarLibro() {
+  getlibros();
+}
 function getlibros() {
   fetch(getlibrosUrl)
     .then((response) => {
@@ -57,4 +61,5 @@ function procesarLibros() {
   const info = document.getElementById("main");
   info.appendChild(tabla);
 }
-document.addEventListener("DOMContentLoaded", getlibros);
+
+bottomBuscar.addEventListener("click", clickBuscarLibro);
