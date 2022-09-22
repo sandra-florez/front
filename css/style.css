@@ -121,6 +121,10 @@ table {
   border-collapse: collapse;
 }
 
+table thead {
+  background-color: #1f45fc;
+}
+
 table td {
   border: 1px solid black;
   padding: 5px;

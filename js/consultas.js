@@ -33,7 +33,6 @@ function getlibros() {
 }
 
 function procesarLibros() {
-  const divs = [];
   const tabla = document.createElement("table");
   const hileraHeader = document.createElement("tr");
 
