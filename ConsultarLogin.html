@@ -55,24 +55,17 @@
                 <form name="registro" method="POST">
 
                     <table width="100%">
-                        <CAPTION>INGRESAR AUTOR</CAPTION>
+                        <CAPTION>INGRESE USUARIO</CAPTION>
                         <tbody>
                             <tr>
-                                <td width="10%"><label for="cod_autor">Id Autor:</label></td>
-                                <td>
-                                    <input type="number" id="cod_autor" placeholder="ID Autor" onkeyup="javascript:this.value=this.value.toUpperCase();" required>
-                                </td>
+                                <td><label for="nombre">Usuario:</label></td>
+                                <td><input type="email" id="login" placeholder="correo@dominio"></td>
                             </tr>
                             <tr>
-                                <td><label for="des_autor">Autor:</label></td>
-                                <td>
-                                    <input type="text" id="des_autor" placeholder="Autor" onkeyup="javascript:this.value=this.value.toUpperCase();" required>
-                                </td>
-                            </tr>
+                                <td><label for="email">Password:</label></td>
+                                <td><input type="password" id="password" placeholder="Password"></td>
                             <tr>
-                                <td colspan="2" aling="center">
-                                    <input type="submit" value="Submit">
-                                </td>
+                                <td colspan="2"><input id="bottom" type="submit" value="Enviar"></td>
                             </tr>
                         </tbody>
                     </table>
@@ -82,15 +75,15 @@
 
         <aside>
             <div id="asideImg">
-                <img src="imagenes/IngrearAutor.jpg" width="120" alt="Logotipo">
+                <img src="imagenes/consultarLogin.jpg" width="120" alt="Logotipo">
             </div>
         </aside>
     </section>
 
     <footer>
-        <p>Mintic 2022<br> <span>GRUPO 4</span></p>
+        <p>Mintic 2022 <br> <span>GRUPO 4</span></p>
     </footer>
 </body>
-<script src="js/ingresarAutor.js"></script>
+<script src="js/consultarLogin.js"></script>
 
 </html>
