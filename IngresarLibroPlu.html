@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/IngresarLibro.css">
   <title>Document</title>
 </head>
 
@@ -43,31 +44,59 @@
               <a href="#">Mi Cuenta</a>
               <a href="acercade.html">A Cerca de</a>
             </div>
-            </li>
+          </li>
         </ul>
     </nav>
- 
   </header>
 
   <section class="contenedor">
     <section id="main">
       <article id="contenido">
-        <h2>Área de información</h2>
+        <form name="registro" method="POST">
+
+          <table width="100%">
+            <CAPTION>INGRESAR PLU POR LIBRO</CAPTION>
+            <tbody>
+              <tr>
+                <td><label for="cod_libro">ID Libro:</label></td>
+                <td>
+                  <input type="number" id="cod_libro" placeholder="ID Libro" required>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="plu">Plu:</label></td>
+                <td>
+                  <input type="number" id="plu" placeholder="Plu desde 7700000000000" min="7700000001000" max="7700000099999" required>
+                </td>
+              </tr>
+              <tr>
+                <td><label for="cant_disponible_plu">Plu Dispobible:</label></td>
+                <td>
+                  <input type="number" id="cant_disponible_plu" value="1" placeholder="Plu Dispobible" inputmode="numeric" min="0" max="1" readonly>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" aling="center">
+                  <input type="submit" value="Submit">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
       </article>
     </section>
+
     <aside>
-      <h2>Busqueda</h2><br><br>
-      <form action="">
-        <label for="Nombre Libro">Nombre del Libro a consultar:</label><br>
-        <input type="text" id="nombreLibro" placeholder="Escribe el nombre del Libro">
-        <input id="bottomBuscarLibro" type="button" value="Buscar">
-      </form>
+      <div id="asideImg">
+        <img src="imagenes/IngrearLibroPlu.jpg" width="120" alt="Logotipo">
+      </div>
     </aside>
+    
   </section>
   <footer>
-    <p>Mintic 2022 Sprint 3<br> <span>GRUPO 4</span></p>
+    <p>Mintic 2022 <br> <span>GRUPO 4</span></p>
   </footer>
-  <script src="js/consultas.js"></script>
 </body>
+<script src="js/ingresarLibroPlu.js"></script>
 
 </html>
