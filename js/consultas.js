@@ -28,6 +28,7 @@ function getlibros() {
       }
     })
     .then((data) => {
+      //convertir objeto del back en objecto json.
       libros = JSON.parse(data);
       procesarLibros();
     })
